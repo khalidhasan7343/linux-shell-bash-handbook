@@ -1,6 +1,7 @@
-# Build output (the PDF is published on GitHub Releases, not committed)
-*.pdf
-build/
+# Build output: only the finished handbook PDF is committed, so it can be
+# downloaded straight from the repository. Anything else in build/ is ignored.
+build/*
+!build/linux-shell-bash-handbook.pdf
 
 # Local archive of the original downloads (not part of the repo)
 _originals/

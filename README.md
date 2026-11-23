@@ -14,7 +14,9 @@ Prepared by **MD Khalid Hasan**, Computer Science and Engineering, United Intern
 
 ## 📥 Download the PDF
 
-Get the latest ready-to-read PDF from the **[Releases page](../../releases/latest)**.
+**[⬇️ Download linux-shell-bash-handbook.pdf](build/linux-shell-bash-handbook.pdf)** — the ready-to-read PDF, kept in this repository.
+
+Tagged versions are also attached to the **[Releases page](../../releases/latest)**.
 
 No installation needed. Just download and read.
 
@@ -94,7 +96,7 @@ linux-shell-bash-handbook/
 │   └── filter.lua            #   Pandoc Lua filter (Markdown → Typst components)
 ├── scripts/
 │   └── build.py              # Regenerates src/body.typ from markdown/ and builds the PDF
-├── build/                    # Generated PDF goes here (not committed)
+├── build/                    # The compiled PDF (committed, so it can be downloaded directly)
 ├── .github/
 │   ├── workflows/build.yml   #   CI: builds the PDF and publishes it on tagged releases
 │   ├── ISSUE_TEMPLATE/       #   Issue forms for mistakes and suggestions
