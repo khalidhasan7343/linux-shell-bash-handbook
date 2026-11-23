@@ -22,6 +22,7 @@ Thank you for helping improve the handbook! Every fix, however small, helps the 
    ```bash
    make            # creates build/linux-shell-bash-handbook.pdf
    ```
+   You don't need to update `book/`. The maintainer refreshes the published PDF.
 4. Commit with a clear message and open a pull request. The CI workflow
    compiles the book automatically, so a broken build shows up on the PR.
 

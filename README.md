@@ -14,7 +14,7 @@ Prepared by **MD Khalid Hasan**, Computer Science and Engineering, United Intern
 
 ## 📥 Download the PDF
 
-**[⬇️ Download linux-shell-bash-handbook.pdf](build/linux-shell-bash-handbook.pdf)** — the ready-to-read PDF, kept in this repository.
+**[⬇️ Download linux-shell-bash-handbook.pdf](book/linux-shell-bash-handbook.pdf)** — the ready-to-read PDF, kept in the [`book/`](book/) folder.
 
 Tagged versions are also attached to the **[Releases page](../../releases/latest)**.
 
@@ -59,6 +59,7 @@ No installation needed. Just download and read.
 git clone <this-repo-url>
 cd linux-shell-bash-handbook
 make            # builds build/linux-shell-bash-handbook.pdf
+make book       # also copies it into book/ (the published copy)
 ```
 
 No `make`? Run Typst directly from the repository root:
@@ -96,12 +97,13 @@ linux-shell-bash-handbook/
 │   └── filter.lua            #   Pandoc Lua filter (Markdown → Typst components)
 ├── scripts/
 │   └── build.py              # Regenerates src/body.typ from markdown/ and builds the PDF
-├── build/                    # The compiled PDF (committed, so it can be downloaded directly)
+├── book/                     # The published PDF — download it from here
+├── build/                    # Scratch build output (not committed)
 ├── .github/
 │   ├── workflows/build.yml   #   CI: builds the PDF and publishes it on tagged releases
 │   ├── ISSUE_TEMPLATE/       #   Issue forms for mistakes and suggestions
 │   └── CONTRIBUTING.md       #   How to contribute
-├── Makefile                  # make / make watch / make regen / make clean
+├── Makefile                  # make / make book / make watch / make regen / make clean
 ├── CHANGELOG.md
 ├── LICENSE                   # Book content: CC BY-NC-SA 4.0
 └── LICENSE-CODE              # Build tooling: MIT
