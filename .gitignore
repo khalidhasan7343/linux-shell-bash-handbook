@@ -1,0 +1,19 @@
+# Build output (the PDF is published on GitHub Releases, not committed)
+*.pdf
+build/
+
+# Local archive of the original downloads (not part of the repo)
+_originals/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~

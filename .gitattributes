@@ -1,0 +1,15 @@
+# Normalise line endings for text sources
+* text=auto eol=lf
+
+*.typ  text eol=lf
+*.md   text eol=lf
+*.lua  text eol=lf
+*.py   text eol=lf
+*.yml  text eol=lf
+Makefile text eol=lf
+
+# Binary files: never diff or convert
+*.pdf binary
+*.otf binary
+*.ttf binary
+*.zip binary
